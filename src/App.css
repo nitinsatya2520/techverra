@@ -106,6 +106,72 @@ body {
   font-size: 0.95rem;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.intern-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.intern-card:hover {
+  transform: translateY(-5px);
+}
+
+.intern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.intern-form input,
+.intern-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #bb86fc;
+  cursor: pointer;
+}
+
+.intern-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.intern-form button {
+  padding: 0.8rem;
+  background-color: #bb86fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.intern-form button:hover {
+  background-color: #9b68e4;
+}
+
+
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -155,5 +221,35 @@ body {
 
   .footer {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.2rem;
+    margin-top: 1rem;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .top-logo {
+    height: 60px;
   }
 }

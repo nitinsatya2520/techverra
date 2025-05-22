@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Internships from './components/internships';
 
 const Home = () => (
   <section className="page-section">
@@ -36,12 +37,7 @@ const About = () => (
   </section>
 );
 
-const Internships = () => (
-  <section className="page-section">
-    <h2>Internships</h2>
-    <p>We offer internship opportunities in development, marketing, UI/UX, and analytics. Gain real-world experience and grow with us. Contact us for openings.</p>
-  </section>
-);
+
 
 const Services = () => (
   <section className="page-section">
@@ -80,19 +76,26 @@ const Contact = () => (
 );
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
       <div>
         <div className="top-bar">
           <img src="/logon.png" alt="Techverra Logo" className="top-logo" />
-          <nav className="nav">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/careers">Careers</Link>
-            <Link to="/internships">Internships</Link>
-            <Link to="/contact">Contact</Link>
+
+           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </button>
+
+          {/* Nav Links */}
+          <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+            <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+            <Link to="/careers" onClick={() => setMenuOpen(false)}>Careers</Link>
+            <Link to="/internships" onClick={() => setMenuOpen(false)}>Internships</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
         <div className="container">
