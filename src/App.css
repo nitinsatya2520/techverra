@@ -30,6 +30,7 @@ body {
   border-radius: 12px;
   backdrop-filter: blur(10px);
   margin-bottom: 2rem;
+  z-index: 1000;
 }
 
 .top-logo {
