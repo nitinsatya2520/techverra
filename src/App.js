@@ -32,8 +32,8 @@ const Home = () => (
 const Contact = () => (
   <section className="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@techverra.com</p>
-    <p>Location: Andhra Pradesh, India</p>
+    <p>Email: techverrasolutions@gmail.com</p>
+    <p>Location:  Kankipadu, VijayawadaAndhra Pradesh, India</p>
   </section>
 );
 
