@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #1f2937);
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background-color: rgba(15, 23, 42, 0.7);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
 }
 
-.App-link {
-  color: #61dafb;
+.nav a {
+  text-decoration: none;
+  color: #bb86fc;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+  animation: fadeIn 1.5s ease;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  animation: scaleIn 1s ease;
+}
+
+.about, .services, .contact {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  animation: slideIn 1s ease;
+}
+
+.about h2, .services h2, .contact h2 {
+  color: #bb86fc;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.services ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.2rem;
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    width: 70px;
+  }
+  .about, .services, .contact {
+    padding: 1rem;
+  }
+  .about h2, .services h2, .contact h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav a {
+    font-size: 0.95rem;
+  }
+  .footer {
+    font-size: 0.85rem;
   }
 }
