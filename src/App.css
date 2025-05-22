@@ -19,16 +19,28 @@ body {
   padding: 2rem 1rem;
 }
 
-.nav {
+.top-bar {
+  position: fixed;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(15, 23, 42, 0.7);
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
   border-radius: 12px;
   backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.top-logo {
+  width: auto;
+  height: 90px;
+  animation: scaleIn 0.6s ease;
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -44,6 +56,14 @@ body {
   transform: scale(1.1);
 }
 
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  animation: scaleIn 1s ease;
+}
+
 .header {
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
@@ -54,26 +74,18 @@ body {
   animation: fadeIn 1.5s ease;
 }
 
-.logo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-  animation: scaleIn 1s ease;
-}
-
-.about, .services, .contact {
-  margin-top: 2.5rem;
+.page-section {
+  margin-top: 100px;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  
+ 
   animation: slideIn 1s ease;
 }
 
-.about h2, .services h2, .contact h2 {
+.page-section h2 {
+  margin-top: 2rem;
   color: #bb86fc;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.8rem;
 }
 
@@ -111,17 +123,26 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .top-logo {
+    width: 50px;
+  }
+
   .nav {
     flex-direction: column;
     align-items: center;
   }
-  .logo {
-    width: 70px;
+
+  .page-section {
+    padding: 1.5rem;
   }
-  .about, .services, .contact {
-    padding: 1rem;
-  }
-  .about h2, .services h2, .contact h2 {
+
+  .page-section h2 {
     font-size: 1.4rem;
   }
 }
@@ -130,6 +151,7 @@ body {
   .nav a {
     font-size: 0.95rem;
   }
+
   .footer {
     font-size: 0.85rem;
   }
