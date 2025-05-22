@@ -251,5 +251,6 @@ body {
 
   .top-logo {
     height: 60px;
+    width: auto;
   }
 }
