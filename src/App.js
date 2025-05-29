@@ -7,6 +7,7 @@ import New from './components/New';
 import About from './pages/About';
 import TimeModule from './components/TimeModule';
 import WeatherModule from './components/WeatherModule';
+import FullEstimator from './pages/FullEstimator';
 
 const Home = () => (
   <section className="page-section">
@@ -32,8 +33,10 @@ const Home = () => (
         <li>Tech Consulting & Training</li>
       </ul>
     </section>
+    
   </section>
 );
+
 
 
 
@@ -105,6 +108,7 @@ const App = () => {
             <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
             <Link to="/careers" onClick={() => setMenuOpen(false)}>Careers</Link>
             <Link to="/internships" onClick={() => setMenuOpen(false)}>Internships</Link>
+            <Link to="/full-estimator" onClick={() => setMenuOpen(false)}>Full Estimator</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
@@ -115,6 +119,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/full-estimator" element={<FullEstimator />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/internships" element={<Internships />} />
           <Route path="/contact" element={<Contact />} />
