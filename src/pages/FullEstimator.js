@@ -92,6 +92,7 @@ export default function FullEstimator() {
   const generatePDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(14);
+    doc.text = "TechVerra Estimate", 10, 10;
     doc.text(`Client: ${clientName}`, 10, 20);
     doc.text(`Email: ${clientEmail}`, 10, 30);
     doc.text("Selected Services:", 10, 45);
