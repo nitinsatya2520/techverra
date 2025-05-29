@@ -108,7 +108,7 @@ const App = () => {
             <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
             <Link to="/careers" onClick={() => setMenuOpen(false)}>Careers</Link>
             <Link to="/internships" onClick={() => setMenuOpen(false)}>Internships</Link>
-            <Link to="/estimator" onClick={() => setMenuOpen(false)}>Full Estimator</Link>
+            <Link to="/full-estimator" onClick={() => setMenuOpen(false)}>Estimator</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
