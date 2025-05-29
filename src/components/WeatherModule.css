@@ -1,0 +1,52 @@
+/* WeatherModule.css */
+.weather-module {
+    background-color: rgba(15, 23, 42, 0); /* Dark transparent background for contrast */
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0; /* Position it on the right side */
+  z-index: 1000;
+  width: 180px;
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+  text-align: center;
+  
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-family: 'Arial', sans-serif;
+  }
+  
+  .weather-module:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather-module h3 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .weather-module p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .weather-module {
+      visibility: hidden;
+      padding-bottom: 25px;
+      font-size: 1rem;
+    }
+  
+    .weather-module h3 {
+      font-size: 1.2rem;
+    }
+  
+    .weather-module p {
+      font-size: 1rem;
+    }
+  }
+  

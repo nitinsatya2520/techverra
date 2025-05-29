@@ -1,0 +1,15 @@
+.video-loader-container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-loader {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

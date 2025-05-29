@@ -90,6 +90,13 @@ body {
   font-size: 1.8rem;
 }
 
+
+.page-section h3 {
+  margin-top: 2rem;
+  color: #bb86fc;
+  margin-bottom: 1.5rem;
+  
+}
 .services ul {
   list-style-type: square;
   padding-left: 1.5rem;

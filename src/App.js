@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Loader from './components/Loader';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Internships from './components/internships';
+import New from './components/New';
+import About from './pages/About';
+import TimeModule from './components/TimeModule';
+import WeatherModule from './components/WeatherModule';
 
 const Home = () => (
   <section className="page-section">
@@ -30,12 +35,6 @@ const Home = () => (
   </section>
 );
 
-const About = () => (
-  <section className="page-section">
-    <h2>About Us</h2>
-    <p>We are a tech-forward company committed to transforming businesses through advanced digital solutions and personalized strategies. Our team thrives on innovation, excellence, and trust.</p>
-  </section>
-);
 
 
 
@@ -77,8 +76,19 @@ const Contact = () => (
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+   const [appLoading, setAppLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setAppLoading(false), 3000); // simulate loading
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (appLoading) return <Loader />;
   return (
     <Router>
+      <New/>
+      <WeatherModule apiKey="03f7fb2a6ffa9af4e20414dc73edb7a3" city="Delhi" />
+      <TimeModule/>
       <div>
         <div className="top-bar">
           <img src="/logon.png" alt="Techverra Logo" className="top-logo" />
