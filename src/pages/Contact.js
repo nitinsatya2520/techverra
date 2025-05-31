@@ -1,36 +1,42 @@
-import React, { useRef } from "react";
-import "../App.css";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [step, setStep] = useState(1);
+  const [service, setService] = useState("");
+  const [budget, setBudget] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_ym4lsmv",       // Your EmailJS Service ID
-        "template_cg9anr2",      // Your EmailJS Template ID
+        "service_ym4lsmv",       // Replace with your service ID
+        "template_cg9anr2",      // Replace with your template ID
         form.current,
-        "sYKOdtAOrjalTn-dk"  // Your EmailJS Public Key
+        "j83MWXHJC7_2zld3Ph9j2"  // Replace with your public key
       )
       .then(
         (result) => {
           alert("✅ Message sent successfully!");
           console.log(result.text);
           form.current.reset();
+          setStep(1); setService(""); setBudget("");
         },
         (error) => {
           alert("❌ Failed to send message. Try again.");
-          console.error(error.text);
+          console.log(error.text);
         }
       );
   };
 
   return (
     <section className="page-section contact">
+
       <h2>Contact Us</h2>
+
+        
 
       <p>
         📧 Email: <a href="mailto:techverrasolutions@gmail.com">techverrasolutions@gmail.com</a>
@@ -66,77 +72,123 @@ const Contact = () => {
         ></iframe>
       </div>
 
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="contact-form"
-        style={{
-          marginTop: "30px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "15px",
-          maxWidth: "500px",
-          padding: "20px",
-          backgroundColor: "#f9f9f9",
-          borderRadius: "10px",
-          boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-        }}
-      >
-        <h3 style={{ marginBottom: "10px", fontSize: "1.5rem", color: "#333" }}>Send Us a Message</h3>
+      {step === 1 && (
+        <div className="mini-quiz">
+          <h3>What service are you looking for?</h3>
+          <select value={service} onChange={(e) => setService(e.target.value)}>
+            <option value="">-- Select --</option>
+            <option value="Website Development">Website Development</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Branding">Branding</option>
+          </select>
+          <button
+            style={{ marginTop: "10px" }}
+            disabled={!service}
+            onClick={() => setStep(2)}
+          >
+            Next
+          </button>
+        </div>
+      )}
 
-        <label htmlFor="name" style={{ fontWeight: "bold" }}>Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Full Name"
-          required
-          style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
-        />
+      {step === 2 && (
+        <div className="mini-quiz">
+          <h3>What is your budget range?</h3>
+          <select value={budget} onChange={(e) => setBudget(e.target.value)}>
+            <option value="">-- Select --</option>
+            <option value="₹5,000 - ₹20,000">₹5,000 - ₹20,000</option>
+            <option value="₹20,000 - ₹50,000">₹20,000 - ₹50,000</option>
+            <option value="₹50,000+">₹50,000+</option>
+          </select>
+          <button
+            style={{ marginTop: "10px" }}
+            disabled={!budget}
+            onClick={() => setStep(3)}
+          >
+            Continue to Form
+          </button>
+        </div>
+      )}
 
-        <label htmlFor="email" style={{ fontWeight: "bold" }}>Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-          style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
-        />
-
-        <label htmlFor="message" style={{ fontWeight: "bold" }}>Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Write your message here..."
-          rows="5"
-          required
+      {step === 3 && (
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="contact-form"
           style={{
-            padding: "10px",
-            borderRadius: "5px",
-            border: "1px solid #ccc",
-            resize: "vertical",
+            marginTop: "30px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "15px",
+            maxWidth: "500px",
+            padding: "20px",
+            backgroundColor: "#f9f9f9",
+            borderRadius: "10px",
+            boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
           }}
-        ></textarea>
-
-        <button
-          type="submit"
-          style={{
-            padding: "12px",
-            borderRadius: "5px",
-            border: "none",
-            backgroundColor: "#007BFF",
-            color: "#fff",
-            fontWeight: "bold",
-            cursor: "pointer",
-            transition: "background 0.3s",
-          }}
-          onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}
-          onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007BFF")}
         >
-          Send Message
-        </button>
-      </form>
+          <h3 style={{ marginBottom: "10px", fontSize: "1.5rem", color: "#333" }}>
+            Send Us a Message
+          </h3>
+
+          {/* Hidden fields for quiz data */}
+          <input type="hidden" name="selected_service" value={service} />
+          <input type="hidden" name="budget_range" value={budget} />
+
+          <label htmlFor="name" style={{ fontWeight: "bold" }}>Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Full Name"
+            required
+            style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
+          />
+
+          <label htmlFor="email" style={{ fontWeight: "bold" }}>Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
+          />
+
+          <label htmlFor="message" style={{ fontWeight: "bold" }}>Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            rows="5"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+              resize: "vertical"
+            }}
+          ></textarea>
+
+          <button
+            type="submit"
+            style={{
+              padding: "12px",
+              borderRadius: "5px",
+              border: "none",
+              backgroundColor: "#007BFF",
+              color: "#fff",
+              fontWeight: "bold",
+              cursor: "pointer",
+              transition: "background 0.3s"
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#0056b3"}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#007BFF"}
+          >
+            Send Message
+          </button>
+        </form>
+      )}
     </section>
   );
 };
