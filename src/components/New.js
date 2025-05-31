@@ -17,7 +17,7 @@ function New() {
       </button>
       <div className="content">
         <h3 className="new-heading">Latest News</h3>
-        <p className="new-message">No new updates</p>
+        <p className="new-message">Techverra Solutions Technical Training Program - 2025 starting from June 2nd week</p>
       </div>
     </div>
   );
