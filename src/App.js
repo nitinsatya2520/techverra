@@ -8,6 +8,7 @@ import About from './pages/About';
 import TimeModule from './components/TimeModule';
 import WeatherModule from './components/WeatherModule';
 import FullEstimator from './pages/FullEstimator';
+import Leadership from './components/Leadership';
 
 const Home = () => (
   <section className="page-section">
@@ -21,6 +22,15 @@ const Home = () => (
       <h2>About Us</h2>
       <p>Techverra Solutions is a dynamic IT and digital services company specializing in software development, digital marketing, web platform creation, and technology consulting. We aim to digitally transform businesses across industries with innovative, customized solutions.</p>
     </section>
+     <section className="services">
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>✅ Experienced Team</li>
+      <li>✅ Custom Solutions</li>
+      <li>✅ On-time Delivery</li>
+      <li>✅ 24/7 Support</li>
+    </ul>
+  </section>
 
     <section className="services">
       <h2>Our Services</h2>
@@ -33,6 +43,28 @@ const Home = () => (
         <li>Tech Consulting & Training</li>
       </ul>
     </section>
+
+    
+  <section className="about">
+    <h2>Client Testimonials</h2>
+    <div className="testimonial-card">
+      <p>"Techverra built our platform on time and exceeded our expectations!"</p>
+      <strong>— Priya S., Startup Founder</strong>
+    </div>
+    <div className="testimonial-card">
+      <p>"The UI/UX team transformed our user experience brilliantly."</p>
+      <strong>— Anil K., Product Manager</strong>
+    </div>
+  </section>
+  <section className="cta-section">
+    <div className="cta-content">
+      <h2>Ready to build your project with TechVerra Solutions?</h2>
+      <p>Let’s turn your idea into a powerful digital solution. Talk to our team today.</p>
+      <a href="/contact" className="cta-button">Book a Free Consultation</a>
+    </div>
+  </section>
+
+  <Leadership />
     
   </section>
 );
@@ -54,6 +86,21 @@ const Services = () => (
     </ul>
   </section>
 );
+
+const Testimonials = () => (
+  <section className="page-section testimonials">
+    <h2>Client Testimonials</h2>
+    <div className="testimonial-card">
+      <p>"Techverra built our platform on time and exceeded our expectations!"</p>
+      <strong>— Priya S., Startup Founder</strong>
+    </div>
+    <div className="testimonial-card">
+      <p>"The UI/UX team transformed our user experience brilliantly."</p>
+      <strong>— Anil K., Product Manager</strong>
+    </div>
+  </section>
+);
+
 
 const Portfolio = () => (
   <section className="page-section">
@@ -109,6 +156,7 @@ const App = () => {
             <Link to="/careers" onClick={() => setMenuOpen(false)}>Careers</Link>
             <Link to="/internships" onClick={() => setMenuOpen(false)}>Internships</Link>
             <Link to="/full-estimator" onClick={() => setMenuOpen(false)}>Estimator</Link>
+            <Link to="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
@@ -121,6 +169,7 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/full-estimator" element={<FullEstimator />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/internships" element={<Internships />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

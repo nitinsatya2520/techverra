@@ -148,6 +148,40 @@ body {
   font-size: 1rem;
 }
 
+.cta-section {
+  margin-top: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+  animation: fadeIn 1.5s ease;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background-color: #00b894;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #019170;
+}
 
 
 .menu-toggle {
