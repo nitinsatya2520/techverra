@@ -160,6 +160,9 @@ export default function FullEstimator() {
     <section className="page-section">
       <h2 className="text-2xl font-bold mb-4">📊 Project Estimator</h2>
 
+      <p className="mb-4">Select the services you need and get a detailed estimate.</p>
+      <p className="mb-4">(All prices in INR. GST extra as applicable.)</p>
+
       <div className="bg-white shadow rounded p-4 space-y-4">
         <div>
           <label htmlFor="name" className="block font-medium">Name</label>
