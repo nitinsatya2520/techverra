@@ -37,21 +37,72 @@ const packages = [
     ],
   },
    {
-    category: "Advanced Digital Services",
+    category: "Modular Website Add-Ons – Design & UI",
     items: [
-      {
-        label: "Digital Advertising & Marketing (SEM, SEO, Social Media, Print, Outdoor)",
-        price: 55000,
-        note: "₹10,000 – ₹1,00,000/month"
-      },
-   {
-        label: "Tech Consulting & Training",
-        price: 65000,
-        note: "₹1,500 – ₹5,000/hr or ₹30,000 – ₹1,00,000/project"
-      },
+      { label: "Homepage Design", price: 3000, note: "₹2,000 – ₹4,000" },
+      { label: "Inner Page (per page)", price: 1500, note: "₹1,000 – ₹2,000" },
+      { label: "Responsive Design", price: 2000, note: "₹1,500 – ₹3,000" },
+      { label: "Light Animations (CSS/JS)", price: 750, note: "₹500 – ₹1,000" }
+    ]
+  },
+  {
+    category: "Modular Website Add-Ons – Functionality",
+    items: [
+      { label: "Contact Form", price: 1500, note: "₹1,000 – ₹2,000" },
+      { label: "Dynamic Forms with DB/API", price: 4500, note: "₹3,000 – ₹6,000" },
+      { label: "Search Feature", price: 3000, note: "₹2,000 – ₹4,000" },
+      { label: "Authentication System", price: 7500, note: "₹5,000 – ₹10,000" },
+      { label: "Admin Panel", price: 15000, note: "₹10,000 – ₹20,000" },
+      { label: "Blog/News Module", price: 6500, note: "₹5,000 – ₹8,000" }
+    ]
+  },
+  {
+    category: "Modular Website Add-Ons – E-Commerce Modules",
+    items: [
+      { label: "Product Catalog Page", price: 7500, note: "₹5,000 – ₹10,000" },
+      { label: "Product Detail Page", price: 3500, note: "₹2,000 – ₹5,000" },
+      { label: "Cart & Checkout", price: 11000, note: "₹7,000 – ₹15,000" },
+      { label: "Payment Gateway Integration", price: 7500, note: "₹5,000 – ₹10,000" },
+      { label: "Order Tracking", price: 5000, note: "₹3,000 – ₹7,000" },
+      { label: "Admin Inventory Management", price: 7500, note: "₹5,000 – ₹10,000" }
+    ]
+  },
+  {
+    category: "Modular Website Add-Ons – Backend & Integrations",
+    items: [
+      { label: "Database Design + Integration", price: 5000, note: "₹3,000 – ₹7,000" },
+      { label: "API Development (REST)", price: 10000, note: "₹5,000 – ₹15,000" },
+      { label: "Third-Party API Integration", price: 6000, note: "₹3,000 – ₹10,000" },
+      { label: "Role-Based Access Control", price: 7500, note: "₹5,000 – ₹10,000" },
+      { label: "Notifications (Email/SMS)", price: 3500, note: "₹2,000 – ₹5,000" }
+    ]
+  },
+  {
+    category: "Modular Website Add-Ons – Performance & Hosting",
+    items: [
+      { label: "SEO Optimization (On-page)", price: 10000, note: "₹5,000 – ₹15,000" },
+      { label: "Hosting Setup", price: 3500, note: "₹2,000 – ₹5,000" },
+      { label: "SSL Certificate Setup", price: 1000, note: "₹500 – ₹1,500" },
+      { label: "Page Speed Optimization", price: 3500, note: "₹2,000 – ₹5,000" },
+      { label: "CDN Setup (Cloudflare)", price: 2000, note: "₹1,000 – ₹3,000" }
+    ]
+  },
+  {
+    category: "Modular Website Add-Ons – Publishing & Maintenance",
+    items: [
+      { label: "App/Play Store Publishing (for PWA)", price: 3000 },
+      { label: "Site Uptime Monitoring", price: 1500, note: "₹1,000 – ₹2,000/mo" },
+      { label: "Maintenance (Basic to Premium)", price: 6000, note: "₹2,000 – ₹10,000/mo" }
+    ]
+  },
+  {
+    category: "Upsell Bundles",
+    items: [
+      { label: "Launch-Ready Kit", price: 10000, note: "₹8,000 – ₹12,000" },
+      { label: "App Publishing Kit", price: 5000, note: "₹4,000 – ₹6,000" },
+      { label: "Analytics Kit", price: 3000, note: "₹2,500 – ₹4,000" }
     ]
   }
-
 ];
 
 export default function FullEstimator() {
@@ -92,7 +143,7 @@ export default function FullEstimator() {
   const generatePDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(14);
-    doc.text = "TechVerra Estimate", 10, 10;
+    doc.text("TechVerra Solutions Pvt. Ltd. Estimate", 10, 10);
     doc.text(`Client: ${clientName}`, 10, 20);
     doc.text(`Email: ${clientEmail}`, 10, 30);
     doc.text("Selected Services:", 10, 45);
