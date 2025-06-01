@@ -109,7 +109,12 @@ export default function FullEstimator() {
   const [selectedItems, setSelectedItems] = useState([]);
   const [clientName, setClientName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
+  const categories = ["All", "Web Development", "Design", "Marketing", "SEO"];
+
+  
   const toggleItem = (label) => {
     setSelectedItems((prev) =>
       prev.includes(label) ? prev.filter((item) => item !== label) : [...prev, label]
@@ -184,6 +189,9 @@ export default function FullEstimator() {
           />
         </div>
       </div>
+
+      
+
 
       {packages.map((group) => (
         <div key={group.category} className="bg-white shadow rounded p-6 space-y-4">

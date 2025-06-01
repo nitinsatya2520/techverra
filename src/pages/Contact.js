@@ -1,50 +1,64 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [service, setService] = useState("");
   const [budget, setBudget] = useState("");
+  const [loading, setLoading] = useState(false);
 
+ 
   const sendEmail = (e) => {
-    e.preventDefault();
+  e.preventDefault();
+  setLoading(true);
 
-    emailjs
-      .sendForm(
-        "service_ym4lsmv",       // Replace with your service ID
-        "template_cg9anr2",      // Replace with your template ID
-        form.current,
-        "j83MWXHJC7_2zld3Ph9j2"  // Replace with your public key
-      )
-      .then(
-        (result) => {
-          alert("✅ Message sent successfully!");
-          console.log(result.text);
-          form.current.reset();
-          setStep(1); setService(""); setBudget("");
-        },
-        (error) => {
-          alert("❌ Failed to send message. Try again.");
-          console.log(error.text);
-        }
-      );
-  };
+  emailjs
+    .sendForm(
+      "service_ym4lsmv",
+      "template_cg9anr2",
+      form.current,
+      "sYKOdtAOrjalTn-dk"
+    )
+    .then(
+      (result) => {
+        setLoading(false);
+        alert("✅ Message sent successfully!");
+        form.current.reset();
+        navigate("/thank-you");
+        setStep(1);
+        setService("");
+        setBudget("");
+      },
+      (error) => {
+        setLoading(false);
+        alert("❌ Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      }
+    );
+};
+
 
   return (
     <section className="page-section contact">
-
       <h2>Contact Us</h2>
 
-        
-
       <p>
-        📧 Email: <a href="mailto:techverrasolutions@gmail.com">techverrasolutions@gmail.com</a>
+        📧 Email:{" "}
+        <a href="mailto:techverrasolutions@gmail.com">
+          techverrasolutions@gmail.com
+        </a>
       </p>
 
       <p>
         📞 WhatsApp:{" "}
-        <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           +91-99999-99999
         </a>
       </p>
@@ -72,6 +86,7 @@ const Contact = () => {
         ></iframe>
       </div>
 
+      {/* Step 1 - Choose Service */}
       {step === 1 && (
         <div className="mini-quiz">
           <h3>What service are you looking for?</h3>
@@ -91,6 +106,7 @@ const Contact = () => {
         </div>
       )}
 
+      {/* Step 2 - Choose Budget */}
       {step === 2 && (
         <div className="mini-quiz">
           <h3>What is your budget range?</h3>
@@ -110,6 +126,7 @@ const Contact = () => {
         </div>
       )}
 
+      {/* Step 3 - Contact Form */}
       {step === 3 && (
         <form
           ref={form}
@@ -127,11 +144,9 @@ const Contact = () => {
             boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
           }}
         >
-          <h3 style={{ marginBottom: "10px", fontSize: "1.5rem", color: "#333" }}>
-            Send Us a Message
-          </h3>
+          <h3 style={{ fontSize: "1.5rem", color: "#333" }}>Send Us a Message</h3>
 
-          {/* Hidden fields for quiz data */}
+          {/* Hidden fields */}
           <input type="hidden" name="selected_service" value={service} />
           <input type="hidden" name="budget_range" value={budget} />
 
@@ -172,20 +187,19 @@ const Contact = () => {
 
           <button
             type="submit"
+            disabled={loading}
             style={{
               padding: "12px",
               borderRadius: "5px",
               border: "none",
-              backgroundColor: "#007BFF",
+              backgroundColor: loading ? "#6c757d" : "#007BFF",
               color: "#fff",
               fontWeight: "bold",
-              cursor: "pointer",
+              cursor: loading ? "not-allowed" : "pointer",
               transition: "background 0.3s"
             }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#0056b3"}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#007BFF"}
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       )}

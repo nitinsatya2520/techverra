@@ -10,7 +10,7 @@ import WeatherModule from './components/WeatherModule';
 import FullEstimator from './pages/FullEstimator';
 import Contact from "./pages/Contact"; // adjust the path if needed
 import Leadership from './components/Leadership';
-
+import ThankYou from "./components/ThankYou";
 import {
   FaBullhorn,
   FaCode,
@@ -227,6 +227,7 @@ const App = () => {
           <Route path="/careers" element={<Careers />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/internships" element={<Internships />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         
