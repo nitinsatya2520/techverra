@@ -126,7 +126,7 @@
 }
 
 /* ✅ Mobile View */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .chat-box {
     width: 100vw;
     height: 100vh;
