@@ -11,6 +11,8 @@ import FullEstimator from './pages/FullEstimator';
 import Contact from "./pages/Contact"; // adjust the path if needed
 import Leadership from './components/Leadership';
 import ThankYou from "./components/ThankYou";
+import Jan from './components/jan';
+
 import {
   FaBullhorn,
   FaCode,
@@ -193,6 +195,7 @@ const App = () => {
       <New/>
       <WeatherModule apiKey="03f7fb2a6ffa9af4e20414dc73edb7a3" city="Delhi" />
       <TimeModule/>
+       <Jan />
       <div>
         <div className="top-bar">
           <Link to="/">
@@ -229,6 +232,7 @@ const App = () => {
           <Route path="/internships" element={<Internships />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/jan" element={<Jan />} />
         </Routes>
         
         <footer className="footer">
