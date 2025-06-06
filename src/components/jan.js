@@ -19,9 +19,7 @@ function Jan() {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await axios.post('https://jan-l9jg.onrender.com/api/command', {
-        command,
-      });
+      const res = await axios.post('https://techverra-bot.onrender.com/chat', { message: command });
 
       const janMessage = { sender: 'jan', text: res.data.response };
       setMessages((prev) => [...prev, janMessage]);
