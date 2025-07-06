@@ -1,6 +1,6 @@
 import { useState } from "react";
 import jsPDF from "jspdf";
-import './FullEstimator.css';
+
 
 const packages = [
   {
@@ -162,71 +162,81 @@ export default function FullEstimator() {
   };
 
   return (
-  <section className="estimator-section">
-  <h2>📊 Project Estimator</h2>
-  <p>Select the services you need and get a detailed estimate.</p>
-  <p>(All prices in INR. GST extra as applicable.)</p>
+    <section className="page-section">
+      <h2 className="text-2xl font-bold mb-4">📊 Project Estimator</h2>
 
-  <div className="input-group">
-    <label htmlFor="name">Name</label>
-    <input id="name" value={clientName} onChange={(e) => setClientName(e.target.value)} />
-  </div>
+      <p className="mb-4">Select the services you need and get a detailed estimate.</p>
+      <p className="mb-4">(All prices in INR. GST extra as applicable.)</p>
 
-  <div className="input-group">
-    <label htmlFor="email">Email</label>
-    <input id="email" type="email" value={clientEmail} onChange={(e) => setClientEmail(e.target.value)} />
-  </div>
+      <div className="bg-white shadow rounded p-4 space-y-4">
+        <div>
+          <label htmlFor="name" className="block font-medium">Name</label>
+          <input
+            id="name"
+            value={clientName}
+            onChange={(e) => setClientName(e.target.value)}
+            className="w-full border border-gray-300 p-2 rounded"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block font-medium">Email</label>
+          <input
+            id="email"
+            type="email"
+            value={clientEmail}
+            onChange={(e) => setClientEmail(e.target.value)}
+            className="w-full border border-gray-300 p-2 rounded"
+          />
+        </div>
+      </div>
 
-  {packages.map((group) => (
-    <div key={group.category} className="package-group">
-      <h3>{group.category}</h3>
-      {group.items.map((item) => (
-        <div key={item.label} className="package-item">
-          <label>
-            <input
-              type="checkbox"
-              checked={selectedItems.includes(item.label)}
-              onChange={() => toggleItem(item.label)}
-            />
-            {item.label}
-          </label>
-          <div className="item-price">
-            ₹{item.price.toLocaleString()}
-            {item.note && <div className="note">{item.note}</div>}
-          </div>
+      
+
+
+      {packages.map((group) => (
+        <div key={group.category} className="bg-white shadow rounded p-6 space-y-4">
+          <h3 className="text-xl font-semibold">{group.category}</h3>
+          <hr />
+          {group.items.map((item) => (
+            <div key={item.label} className="flex items-center justify-between">
+              <label className="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked={selectedItems.includes(item.label)}
+                  onChange={() => toggleItem(item.label)}
+                />
+                <span>{item.label}</span>
+              </label>
+              <div className="text-right">
+  <span className="text-gray-600">₹{item.price.toLocaleString()}</span>
+  {item.note && (
+    <div className="text-sm text-gray-500 italic">{item.note}</div>
+  )}
+</div>
+
+            </div>
+          ))}
         </div>
       ))}
-    </div>
-  ))}
-{selectedItems.length > 0 && (
-  <div className="sticky-summary animate-summary-fade">
-    <div className="summary-box">
-      <h3>Total Estimate</h3>
-      <p className="summary-total">₹{totalPrice.toLocaleString()}</p>
 
-      <div className="summary-actions">
-        <button
-  onClick={sendEmail}
-  className="btn-blue"
-  disabled={selectedItems.length === 0}
->
-  Email Quote
-</button>
-
-        <button onClick={generatePDF} className="btn-green">Download PDF</button>
+      <div className="text-right text-xl font-semibold">
+        Total: ₹{totalPrice.toLocaleString()}
       </div>
-    </div>
-  </div>
-)}
 
-
-
-  <div className="total-price">Total: ₹{totalPrice.toLocaleString()}</div>
-
-  
-
-</section>
-
-
+      <div className="flex gap-4 justify-end">
+        <button
+          onClick={sendEmail}
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Email Quote
+        </button>
+        <button
+          onClick={generatePDF}
+          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        >
+          Download PDF
+        </button>
+      </div>
+    </section>
   );
 }

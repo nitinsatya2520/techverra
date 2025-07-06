@@ -1,0 +1,237 @@
+.estimator-section {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1.5s ease;
+}
+
+.estimator-section h2 {
+  font-size: 1.8rem;
+  color: #bb86fc;
+  margin-bottom: 1rem;
+}
+
+.estimator-section p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: #bb86fc;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.package-group {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.package-group h3 {
+  color: #bb86fc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.package-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.package-item label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.package-item input[type="checkbox"] {
+  accent-color: #bb86fc;
+}
+
+.item-price {
+  text-align: right;
+  color: #ccc;
+}
+
+.item-price .note {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 1.3rem;
+  color: #bb86fc;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.estimator-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.estimator-buttons button {
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.estimator-buttons .email-btn {
+  background-color: #007bff;
+}
+
+.estimator-buttons .email-btn:hover {
+  background-color: #005bb5;
+}
+
+.estimator-buttons .pdf-btn {
+  background-color: #00b894;
+}
+
+.estimator-buttons .pdf-btn:hover {
+  background-color: #019170;
+}
+
+/* Progress Bar Wrapper */
+.progress-bar-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar Fill */
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #007bff, #bb86fc);
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+  border-radius: 8px 0 0 8px;
+}
+.sticky-summary {
+  position: sticky;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.summary-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #bb86fc;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 12px rgba(187, 134, 252, 0.15);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.summary-box h3 {
+  font-size: 1.2rem;
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.summary-total {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.summary-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #1e7e34;
+}
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-summary-fade {
+  animation: slideFadeUp 0.6s ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

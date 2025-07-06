@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #0f172a, #1f2937);
+  background-color: #0f172a;
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -74,7 +74,22 @@ body {
   box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
   animation: fadeIn 1.5s ease;
 }
+/* In App.css or relevant file */
+.typing-text, .multi-typing-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #bb86fc;
+  margin-top: 1rem;
+}
 
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
+}
 .page-section {
   margin-top: 100px;
   padding: 2rem;
