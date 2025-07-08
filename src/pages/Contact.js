@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   const form = useRef();
@@ -42,6 +43,21 @@ const Contact = () => {
 
 
   return (
+     <>
+      <Helmet>
+        <title>Home | Techverra Solutions</title>
+        <meta name="description" content="We provide software, marketing, and consulting services." />
+        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
+        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+        <meta property="og:title" content="Home | Techverra Solutions" />
+        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
+        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+        <meta property="og:url" content="https://techverrasolutions.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
+        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
+        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+      </Helmet>
     <section className="page-section contact">
       <h2>Contact Us</h2>
 
@@ -204,6 +220,7 @@ const Contact = () => {
         </form>
       )}
     </section>
+    </>
   );
 };
 

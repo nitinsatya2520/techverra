@@ -15,6 +15,8 @@ import Jan from './components/jan';
 import Home from './pages/Home';
 import Portfolio from "./pages/Portfolio";
 import ParticleBackground from './components/ParticleBackground';
+import { Helmet } from 'react-helmet-async';
+
 import {
   FaBullhorn,
   FaCode,

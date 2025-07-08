@@ -1,6 +1,7 @@
 import { useState } from "react";
 import jsPDF from "jspdf";
 import './FullEstimator.css';
+import { Helmet } from 'react-helmet-async';
 
 const packages = [
   {
@@ -162,6 +163,21 @@ export default function FullEstimator() {
   };
 
   return (
+     <>
+      <Helmet>
+        <title>Home | Techverra Solutions</title>
+        <meta name="description" content="We provide software, marketing, and consulting services." />
+        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
+        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+        <meta property="og:title" content="Home | Techverra Solutions" />
+        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
+        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+        <meta property="og:url" content="https://techverrasolutions.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
+        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
+        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+      </Helmet>
   <section className="estimator-section">
   <h2>📊 Project Estimator</h2>
   <p>Select the services you need and get a detailed estimate.</p>
@@ -226,7 +242,7 @@ export default function FullEstimator() {
   
 
 </section>
-
+</>
 
   );
 }

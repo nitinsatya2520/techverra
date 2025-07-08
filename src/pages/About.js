@@ -1,8 +1,23 @@
 import React from 'react';
 import './About.css'; // Assuming the CSS is in a separate About.css file
+import { Helmet } from 'react-helmet-async';
 
 function About() {
   return (
+    <> <Helmet>
+        <title>Home | Techverra Solutions</title>
+        <meta name="description" content="We provide software, marketing, and consulting services." />
+        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
+        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+        <meta property="og:title" content="Home | Techverra Solutions" />
+        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
+        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+        <meta property="og:url" content="https://techverrasolutions.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
+        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
+        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+      </Helmet>
    <section className="page-section">
       <h2>About Us</h2>
       <p>Techverra Solutions Private Ltd. is a very innovative and dynamic technology company focused on 
@@ -37,7 +52,7 @@ function About() {
         <li>Collaboration: Working closely with clients, partners, and employees to create value and achieve shared success.</li>
         <li>Creativity: Combining technology with creative solutions, especially in film production, design, and marketing.</li>
       </ul>
-    </section>  );
+    </section> </> );
 }
 
 export default About;
