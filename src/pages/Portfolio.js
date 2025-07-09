@@ -1,6 +1,6 @@
 import React from 'react';
 import './Portfolio.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const Portfolio = () => (
   <> 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import jsPDF from "jspdf";
 import './FullEstimator.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const packages = [
   {

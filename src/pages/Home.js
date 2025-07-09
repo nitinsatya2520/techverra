@@ -3,7 +3,7 @@ import '../App.css';
 import Clients from './Clients.js';
 import TypingText from '../components/TypingText.js';
 import MultiTypingText from '../components/MultiTypingText';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const Home = () => (
   <> 

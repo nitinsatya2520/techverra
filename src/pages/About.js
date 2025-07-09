@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'; // Assuming the CSS is in a separate About.css file
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 function About() {
   return (

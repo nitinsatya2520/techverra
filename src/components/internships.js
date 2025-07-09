@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 const Internships = () => {
