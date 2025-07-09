@@ -3,15 +3,15 @@ import './Leadership.css'; // Optional for custom styles
 
 const leaders = [
   {
-    name: 'Kadavakollu Nitin Saya',
-    role: 'Founder & Director',
+    name: 'Kadavakollu Nitin Saya (MD)',
+    role: 'Founder & Managing Director',
     image: '/team/nitin.jpg', // Ensure the image exists in public/team/
     bio: 'Visionary leader driving innovation in software and digital services. Passionate about AI, cybersecurity, and scalable solutions.',
     
   },
   {
-    name: 'Kukkala Jai Kishan',
-    role: 'Co-Founder & Director',
+    name: 'Kukkala Jai Kishan (COO)',
+    role: 'Co-Founder & Director – COO',
     image: '/team/jane.jpg',
     bio: 'Tech strategist with deep expertise in software architecture and team leadership. Focused on delivering high-quality, future-ready tech solutions.',
     
