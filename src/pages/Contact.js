@@ -45,19 +45,14 @@ const Contact = () => {
   return (
      <>
       <Helmet>
-        <title>Home | Techverra Solutions</title>
-        <meta name="description" content="We provide software, marketing, and consulting services." />
-        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
-        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
-        <meta property="og:title" content="Home | Techverra Solutions" />
-        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
-        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-        <meta property="og:url" content="https://techverrasolutions.in/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
-        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
-        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
-      </Helmet>
+  <title>Contact Us | Techverra Solutions</title>
+  <meta name="description" content="Get in touch with Techverra Solutions for business inquiries, partnerships, or support." />
+  <meta name="keywords" content="contact Techverra, business inquiry, support, connect" />
+  <meta property="og:title" content="Contact Us | Techverra Solutions" />
+  <meta property="og:description" content="Reach out to our team for software, marketing, or business consultation services." />
+  <meta property="og:url" content="https://techverrasolutions.in/contact" />
+</Helmet>
+
     <section className="page-section contact">
       <h2>Contact Us</h2>
 

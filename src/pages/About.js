@@ -5,19 +5,23 @@ import { Helmet } from 'react-helmet';
 function About() {
   return (
     <> <Helmet>
-        <title>Home | Techverra Solutions</title>
-        <meta name="description" content="We provide software, marketing, and consulting services." />
-        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
-        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
-        <meta property="og:title" content="Home | Techverra Solutions" />
-        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
-        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-        <meta property="og:url" content="https://techverrasolutions.in/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
-        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
-        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
-      </Helmet>
+  <title>About Us | Techverra Solutions</title>
+  <meta name="description" content="Discover Techverra Solutions – a dynamic company delivering innovative software, digital marketing, and creative film production services." />
+  <meta name="keywords" content="Techverra Solutions, about, mission, team, innovation, software, marketing, digital agency, film production" />
+  <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Us | Techverra Solutions" />
+  <meta property="og:description" content="Learn about our mission, vision, and values. Meet the team behind Techverra’s creative tech solutions." />
+  <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://techverrasolutions.in/about" />
+  <meta property="og:site_name" content="Techverra Solutions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Techverra Solutions" />
+  <meta name="twitter:description" content="Get to know the vision, values, and innovative team behind Techverra Solutions." />
+  <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+</Helmet>
+
+
    <section className="page-section">
       <h2>About Us</h2>
       <p>Techverra Solutions Private Ltd. is a very innovative and dynamic technology company focused on 

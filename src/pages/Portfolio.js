@@ -5,19 +5,23 @@ import { Helmet } from 'react-helmet';
 const Portfolio = () => (
   <> 
       <Helmet>
-        <title>Home | Techverra Solutions</title>
-        <meta name="description" content="We provide software, marketing, and consulting services." />
-        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
-        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
-        <meta property="og:title" content="Home | Techverra Solutions" />
-        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
-        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-        <meta property="og:url" content="https://techverrasolutions.in/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
-        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
-        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
-      </Helmet>
+  <title>Portfolio | Techverra Solutions</title>
+  <meta name="description" content="Explore our successful projects and custom-built software solutions delivered for clients worldwide." />
+  <meta name="keywords" content="Techverra Solutions portfolio, projects, software development, digital marketing, web apps, mobile apps" />
+  <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Work | Techverra Solutions" />
+  <meta property="og:description" content="See the innovative web, AI, and mobile projects built by Techverra Solutions." />
+  <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://techverrasolutions.in/portfolio" />
+  <meta property="og:site_name" content="Techverra Solutions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Techverra Portfolio" />
+  <meta name="twitter:description" content="Browse the creative and impactful projects delivered by Techverra Solutions." />
+  <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+</Helmet>
+
+
   <section className="page-section">
     <h2 className="text-2xl font-bold mb-6" style={{ color: '#bb86fc' }}>🚀 Portfolio</h2>
     <p className="mb-6" style={{ color: '#ddd' }}>

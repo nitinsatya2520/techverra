@@ -165,19 +165,14 @@ export default function FullEstimator() {
   return (
      <>
       <Helmet>
-        <title>Home | Techverra Solutions</title>
-        <meta name="description" content="We provide software, marketing, and consulting services." />
-        <meta name="keywords" content="software development, digital marketing, SEO, IT solutions" />
-        <meta name="author" content="Techverra Solutions Pvt. Ltd." />
-        <meta property="og:title" content="Home | Techverra Solutions" />
-        <meta property="og:description" content="Empowering your business with software and marketing solutions." />
-        <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-        <meta property="og:url" content="https://techverrasolutions.in/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
-        <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
-        <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
-      </Helmet>
+  <title>Project Estimator | Techverra Solutions</title>
+  <meta name="description" content="Estimate the cost of your software or marketing project with our smart estimator tool." />
+  <meta name="keywords" content="project estimator, software cost, app development cost, techverra estimator" />
+  <meta property="og:title" content="Estimator | Techverra Solutions" />
+  <meta property="og:description" content="Instantly estimate your project cost with our interactive tool." />
+  <meta property="og:url" content="https://techverrasolutions.in/full-estimator" />
+</Helmet>
+
   <section className="estimator-section">
   <h2>📊 Project Estimator</h2>
   <p>Select the services you need and get a detailed estimate.</p>

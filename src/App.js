@@ -33,6 +33,15 @@ import {
 
 
 const Services = () => (
+  <><Helmet>
+  <title>Services | Techverra Solutions</title>
+  <meta name="description" content="Explore Techverra's range of services including custom software, marketing campaigns, SEO, and IT consulting." />
+  <meta name="keywords" content="software services, digital marketing, SEO, app development, IT consulting" />
+  <meta property="og:title" content="Our Services | Techverra Solutions" />
+  <meta property="og:description" content="Explore software, marketing, and consulting services tailored to your business." />
+  <meta property="og:url" content="https://techverrasolutions.in/services" />
+</Helmet>
+
   <section className="services-section">
   <h2>Our Services</h2>
   <div className="services-grid">
@@ -88,11 +97,20 @@ const Services = () => (
       </p>
     </div>
   </div>
-</section>
+</section></>
 
 );
 
 const Testimonials = () => (
+  <><Helmet>
+  <title>Client Testimonials | Techverra Solutions</title>
+  <meta name="description" content="Read reviews from our satisfied clients who trusted us with their digital journey." />
+  <meta name="keywords" content="client feedback, testimonials, reviews, Techverra Solutions" />
+  <meta property="og:title" content="Testimonials | Techverra Solutions" />
+  <meta property="og:description" content="Hear what our customers say about working with Techverra." />
+  <meta property="og:url" content="https://techverrasolutions.in/testimonials" />
+</Helmet>
+
   <section className="page-section testimonials">
     <h2>Client Testimonials</h2>
     <div className="testimonial-card">
@@ -103,17 +121,26 @@ const Testimonials = () => (
       <p>"The UI/UX team transformed our user experience brilliantly."</p>
       <strong>— Anil K., Product Manager</strong>
     </div>
-  </section>
+  </section></>
 );
 
 
 
 
 const Careers = () => (
+  <><Helmet>
+  <title>Careers | Techverra Solutions</title>
+  <meta name="description" content="Join Techverra Solutions and be part of a dynamic team shaping digital futures." />
+  <meta name="keywords" content="Techverra careers, jobs, tech jobs, hiring" />
+  <meta property="og:title" content="Careers | Techverra Solutions" />
+  <meta property="og:description" content="Explore open positions and grow with Techverra." />
+  <meta property="og:url" content="https://techverrasolutions.in/careers" />
+</Helmet>
+
   <section className="page-section">
     <h2>Careers</h2>
     <p>We're hiring! Join our team of passionate innovators. Check back soon for job listings.</p>
-  </section>
+  </section></>
 );
 
 

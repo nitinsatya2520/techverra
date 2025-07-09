@@ -19,6 +19,15 @@ const Internships = () => {
   };
 
   return (
+    <><Helmet>
+  <title>Internships | Techverra Solutions</title>
+  <meta name="description" content="Apply for internship opportunities at Techverra and gain hands-on experience in real-world projects." />
+  <meta name="keywords" content="Techverra internships, intern, training, software internships" />
+  <meta property="og:title" content="Internships | Techverra Solutions" />
+  <meta property="og:description" content="Kickstart your career with industry-relevant internships." />
+  <meta property="og:url" content="https://techverrasolutions.in/internships" />
+</Helmet>
+
     <section className="page-section">
       <h2>Internships</h2>
       <div className="card-grid">
@@ -48,7 +57,7 @@ const Internships = () => {
         <textarea name="message" placeholder="Why should we consider you?" value={formData.message} onChange={handleChange} required />
         <button type="submit">Submit Application</button>
       </form>
-    </section>
+    </section></>
   );
 };
 
