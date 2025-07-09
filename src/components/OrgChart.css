@@ -1,0 +1,51 @@
+.org-chart-container {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.fullscreen-overlay svg {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  max-width: none;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.toggle-btn,
+.close-btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover,
+.close-btn:hover {
+  background-color: #3730a3;
+}

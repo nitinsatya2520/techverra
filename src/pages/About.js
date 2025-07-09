@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css'; // Assuming the CSS is in a separate About.css file
 import { Helmet } from 'react-helmet';
-
+import OrgChart from "../components/OrgChart";
 function About() {
   return (
     <> <Helmet>
@@ -56,7 +56,10 @@ function About() {
         <li>Collaboration: Working closely with clients, partners, and employees to create value and achieve shared success.</li>
         <li>Creativity: Combining technology with creative solutions, especially in film production, design, and marketing.</li>
       </ul>
-    </section> </> );
+
+      
+    </section> <h1>Techverra Org Structure</h1>
+      <OrgChart /></> );
 }
 
 export default About;
