@@ -60,9 +60,8 @@ const OrgChart = () => {
 
   useEffect(() => {
     mermaid.initialize({ startOnLoad: false });
-    if (fullscreen && chartContainerRef.current) {
-      const id = "techverra-org-chart";
-      mermaid.render(id, orgChartDefinition).then(({ svg }) => {
+    if (chartContainerRef.current && fullscreen) {
+      mermaid.render("org-chart", orgChartDefinition).then(({ svg }) => {
         chartContainerRef.current.innerHTML = svg;
       });
     }
