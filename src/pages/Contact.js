@@ -66,11 +66,11 @@ const Contact = () => {
       <p>
         📞 WhatsApp:{" "}
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/918919741565"
           target="_blank"
           rel="noopener noreferrer"
         >
-          +91-99999-99999
+          +91-8919741565
         </a>
       </p>
 
