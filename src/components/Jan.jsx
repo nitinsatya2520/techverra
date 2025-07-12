@@ -35,26 +35,26 @@ function Jan() {
   };
 
   return (
-   <div className="fixed bottom-4 right-4 z-50">
+   <div className="fixed bottom-4 right-4 z-[9999]">
   {isOpen ? (
     <div className="w-80 sm:w-96 bg-white shadow-xl rounded-xl border border-gray-300 flex flex-col">
-      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-t-xl flex justify-between items-center">
+      <div className="bg-gradient-to-r from-indigo-400 to-purple-400 text-white px-4 py-2 rounded-t-xl flex justify-between items-center">
         <span className="font-semibold">JAN Assistant (testing)</span>
         <button
-          className="text-white text-xl font-bold hover:text-gray-200"
+          className="text-white text-xl font-bold hover:text-gray-100"
           onClick={() => setIsOpen(false)}
         >
           ×
         </button>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 py-2 space-y-2 max-h-80">
+      <div className="flex-1 overflow-y-auto px-4 py-2 space-y-2 max-h-80 bg-gray-50">
         {messages.map((msg, idx) => (
           <div
             key={idx}
             className={`px-3 py-2 rounded-lg text-sm w-fit ${
               msg.sender === 'user'
-                ? 'bg-blue-100 self-end ml-auto'
+                ? 'bg-indigo-100 self-end ml-auto'
                 : 'bg-gray-200 self-start mr-auto'
             }`}
           >
@@ -64,7 +64,7 @@ function Jan() {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="p-2 border-t border-gray-300 flex items-center gap-2">
+      <div className="p-2 border-t border-gray-300 flex items-center gap-2 bg-white">
         <input
           type="text"
           placeholder="Ask JAN anything..."
@@ -84,13 +84,14 @@ function Jan() {
     </div>
   ) : (
     <button
-      className="bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700"
+      className="bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700 z-[9999]"
       onClick={() => setIsOpen(true)}
     >
       💬 Chat
     </button>
   )}
 </div>
+
 
   );
 }

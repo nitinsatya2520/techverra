@@ -27,7 +27,12 @@ const Home = () => (
 
   <section className="page-section">
     <header className="header">
-      <img src="/logo.png" alt="Techverra Logo" className="logo" />
+      <img 
+  src="/logo.png" 
+  alt="Techverra Logo" 
+  className="w-24 h-auto mx-auto mb-4 animate-scaleIn" 
+/>
+
       <h1>Techverra Solutions Pvt. Ltd.</h1>
       
       <MultiTypingText

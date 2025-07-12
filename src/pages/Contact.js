@@ -88,7 +88,7 @@ const Contact = () => {
       <div className="map-container" style={{ marginTop: "20px", maxWidth: "100%" }}>
         <iframe
           title="TechVerra Location"
-          src="https://maps.google.com/maps?q=16.444680,80.769076,+Punadipadu,+Vijayawada,+Andhra+Pradesh,+India&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d36911.361902994046!2d80.772214!3d16.441889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fdd615fb29a5%3A0x537972b71cc775f0!2sTECHVERRA%20SOLUTIONS%20PVT.%20LTD.!5e1!3m2!1sen!2sus!4v1752324896625!5m2!1sen!2sus"
           width="100%"
           height="300"
           style={{ border: 0 }}

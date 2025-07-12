@@ -9,13 +9,13 @@ function New() {
   };
 
   return (
-    <div
-  className={`fixed right-2 top-[200px] h-[450px] w-[200px] bg-slate-900/70 text-white p-5 rounded-lg shadow-lg z-[1000] transition-transform duration-300 ease-in-out ${
+   <div
+  className={`fixed right-2 top-[200px] h-[450px] w-[200px] bg-white text-gray-900 p-5 rounded-lg shadow-lg z-[1000] transition-transform duration-300 ease-in-out ${
     isOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'
   }`}
 >
   <button
-    className="absolute top-2 left-2 text-xl text-white bg-transparent border-none cursor-pointer"
+    className="absolute top-2 left-2 text-xl p-1 rounded bg-gray-200 hover:bg-gray-300 transition text-gray-800"
     onClick={handleToggle}
   >
     {isOpen ? '×' : '☰'}
@@ -28,6 +28,8 @@ function New() {
     </p>
   </div>
 </div>
+
+
 
   );
 }

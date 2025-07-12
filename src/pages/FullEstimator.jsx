@@ -162,81 +162,80 @@ export default function FullEstimator() {
   };
 
   return (
-    <section className="page-section">
-      <h2 className="text-2xl font-bold mb-4">📊 Project Estimator</h2>
+   <section className="page-section bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-10 max-w-5xl mx-auto text-gray-900">
+  <h2 className="text-2xl font-bold mb-6 text-purple-700">📊 Project Estimator</h2>
 
-      <p className="mb-4">Select the services you need and get a detailed estimate.</p>
-      <p className="mb-4">(All prices in INR. GST extra as applicable.)</p>
+  <p className="mb-2 text-gray-800">Select the services you need and get a detailed estimate.</p>
+  <p className="mb-6 text-gray-700">(All prices in INR. GST extra as applicable.)</p>
 
-      <div className="bg-white shadow rounded p-4 space-y-4">
-        <div>
-          <label htmlFor="name" className="block font-medium">Name</label>
-          <input
-            id="name"
-            value={clientName}
-            onChange={(e) => setClientName(e.target.value)}
-            className="w-full border border-gray-300 p-2 rounded"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block font-medium">Email</label>
-          <input
-            id="email"
-            type="email"
-            value={clientEmail}
-            onChange={(e) => setClientEmail(e.target.value)}
-            className="w-full border border-gray-300 p-2 rounded"
-          />
-        </div>
-      </div>
+  <div className="bg-white border border-gray-200 rounded-xl p-6 space-y-4 shadow-lg">
+    <div>
+      <label htmlFor="name" className="block font-medium text-purple-700">Name</label>
+      <input
+        id="name"
+        value={clientName}
+        onChange={(e) => setClientName(e.target.value)}
+        className="w-full bg-white border border-purple-300 p-2 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="block font-medium text-purple-700">Email</label>
+      <input
+        id="email"
+        type="email"
+        value={clientEmail}
+        onChange={(e) => setClientEmail(e.target.value)}
+        className="w-full bg-white border border-purple-300 p-2 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+      />
+    </div>
+  </div>
 
-      
-
-
-      {packages.map((group) => (
-        <div key={group.category} className="bg-white shadow rounded p-6 space-y-4">
-          <h3 className="text-xl font-semibold">{group.category}</h3>
-          <hr />
-          {group.items.map((item) => (
-            <div key={item.label} className="flex items-center justify-between">
-              <label className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  checked={selectedItems.includes(item.label)}
-                  onChange={() => toggleItem(item.label)}
-                />
-                <span>{item.label}</span>
-              </label>
-              <div className="text-right">
-  <span className="text-gray-600">₹{item.price.toLocaleString()}</span>
-  {item.note && (
-    <div className="text-sm text-gray-500 italic">{item.note}</div>
-  )}
-</div>
-
-            </div>
-          ))}
+  {packages.map((group) => (
+    <div key={group.category} className="bg-white border border-gray-200 rounded-xl p-6 mt-6 shadow-lg">
+      <h3 className="text-lg font-semibold text-purple-700">{group.category}</h3>
+      <hr className="border-purple-300 my-4" />
+      {group.items.map((item) => (
+        <div key={item.label} className="flex items-center justify-between text-sm text-gray-800">
+          <label className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              checked={selectedItems.includes(item.label)}
+              onChange={() => toggleItem(item.label)}
+              className="accent-purple-600"
+            />
+            <span>{item.label}</span>
+          </label>
+          <div className="text-right">
+            <span className="text-purple-600">₹{item.price.toLocaleString()}</span>
+            {item.note && (
+              <div className="text-xs text-gray-600 italic">{item.note}</div>
+            )}
+          </div>
         </div>
       ))}
+    </div>
+  ))}
 
-      <div className="text-right text-xl font-semibold">
-        Total: ₹{totalPrice.toLocaleString()}
-      </div>
+  <div className="text-right text-xl font-bold text-purple-700 mt-6">
+    Total: ₹{totalPrice.toLocaleString()}
+  </div>
 
-      <div className="flex gap-4 justify-end">
-        <button
-          onClick={sendEmail}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Email Quote
-        </button>
-        <button
-          onClick={generatePDF}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-        >
-          Download PDF
-        </button>
-      </div>
-    </section>
+  <div className="flex gap-4 justify-end mt-6">
+    <button
+      onClick={sendEmail}
+      className="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 transition"
+    >
+      Email Quote
+    </button>
+    <button
+      onClick={generatePDF}
+      className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition"
+    >
+      Download PDF
+    </button>
+  </div>
+</section>
+
+
   );
 }

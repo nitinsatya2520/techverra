@@ -19,23 +19,24 @@ const TimeModule = () => {
   });
 
   return (
-    <div
-      className="
-        fixed bottom-0 left-0 z-[1000]
-        w-[180px] p-8
-        bg-slate-900/0
-        backdrop-blur-sm
-        rounded-[25px]
-        text-center
-        font-sans
-        transition-all duration-300
-        hover:shadow-lg
-        text-white
-        md:block hidden
-      "
-    >
-      <p className="text-lg m-0">{`Current time: ${formattedTime}`}</p>
-    </div>
+   <div
+  className="
+    fixed bottom-0 left-0 z-[1000]
+    w-[180px] p-8
+    bg-white/80
+    backdrop-blur-sm
+    rounded-[25px]
+    text-center
+    font-sans
+    transition-all duration-300
+    hover:shadow-lg
+    text-gray-900
+    md:block hidden
+  "
+>
+  <p className="text-lg m-0">{`Current time: ${formattedTime}`}</p>
+</div>
+
   );
 };
 

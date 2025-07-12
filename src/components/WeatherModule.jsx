@@ -55,23 +55,24 @@ const WeatherModule = ({ apiKey }) => {
 
   return (
     <div
-      className="
-        fixed bottom-0 right-0 z-[1000]
-        w-[180px] p-6
-        bg-slate-900/0
-        backdrop-blur-sm
-        rounded-[25px]
-        text-center
-        font-sans text-white text-sm
-        transition-all duration-300
-        hover:shadow-lg
-        md:block hidden
-      "
-    >
-      <h3 className="text-white text-base mb-2">Weather in {name}</h3>
-      <p className="text-white mb-1">Temperature: {temp} °C</p>
-      <p className="text-white mb-0 capitalize">Description: {weather[0].description}</p>
-    </div>
+  className="
+    fixed bottom-10 right-0 z-[1000]
+    w-[180px] p-6
+    bg-white/80
+    backdrop-blur-sm
+    rounded-[25px]
+    text-center
+    font-sans text-gray-900 text-sm
+    transition-all duration-300
+    hover:shadow-lg
+    md:block hidden
+  "
+>
+  <h3 className="text-gray-900 text-base mb-2">Weather in {name}</h3>
+  <p className="text-gray-800 mb-1">Temperature: {temp} °C</p>
+  <p className="text-gray-700 mb-0 capitalize">Description: {weather[0].description}</p>
+</div>
+
   );
 };
 
