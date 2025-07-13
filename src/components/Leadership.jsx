@@ -16,7 +16,7 @@ const leaders = [
   {
     name: 'Kukkala Jai Kishan (COO)',
     role: 'Co-Founder & Director – COO',
-    image: '/team/jane.jpg',
+    image: '/team/Siva.jpg',
     bio: 'Tech strategist with deep expertise in software architecture and team leadership. Focused on delivering high-quality, future-ready tech solutions.',
   },
 ];

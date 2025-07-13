@@ -17,7 +17,7 @@ const leaders = [
   {
     name: 'Ponnapureddy Naga Sivareddy (CBO)',
     role: 'Chief Of Business Operations – CBO',
-    image: '/team/jane.jpg',
+    image: '/team/Siva.jpg',
     bio: 'Strategic leader focused on business growth, client success, and operational excellence across all departments.',
   },
 ];
