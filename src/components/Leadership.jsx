@@ -4,19 +4,19 @@ const leaders = [
     {
   name: 'Ponnapureddy Naga Sivareddy (CBO)',
   role: 'Chief Of Business Operations – CBO',
-  image: '/team/jane.jpg',
+  image: '/assets/jai.jpg',
   bio: 'Strategic leader focused on business growth, client success, and operational excellence across all departments.',
 },
     {
     name: 'Kadavakollu Nitin Saya (MD)',
     role: 'Founder & Managing Director',
-    image: '/assets/Nitin.png',
+    image: '/assets/Nitin.jpg',
     bio: 'Visionary leader driving innovation in software and digital services. Passionate about AI, cybersecurity, and scalable solutions.',
   },
   {
     name: 'Kukkala Jai Kishan (COO)',
     role: 'Co-Founder & Director – COO',
-    image: '/team/Siva.jpg',
+    image: '/assets/Siva.jpg',
     bio: 'Tech strategist with deep expertise in software architecture and team leadership. Focused on delivering high-quality, future-ready tech solutions.',
   },
 ];
