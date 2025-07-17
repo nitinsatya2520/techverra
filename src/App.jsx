@@ -156,7 +156,7 @@ const App = () => {
         <title>Techverra Solutions</title>
       </Helmet>
 
-      <Popup />
+      
       <ParticleBackground />
       <New />
       <WeatherModule apiKey="03f7fb2a6ffa9af4e20414dc73edb7a3" city="Delhi" />

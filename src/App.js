@@ -158,7 +158,7 @@ const App = () => {
   if (appLoading) return <Loader />;
   return (
     <Router>
-      <Popup />
+    
       <ParticleBackground />
       <New/>
       <WeatherModule apiKey="03f7fb2a6ffa9af4e20414dc73edb7a3" city="Delhi" />
