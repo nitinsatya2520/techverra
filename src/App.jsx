@@ -190,7 +190,7 @@ const App = () => {
         { to: '/portfolio', label: 'Portfolio' },
         { to: '/careers', label: 'Careers' },
         { to: '/internships', label: 'Internships' },
-        { to: '/full-estimator', label: 'Estimator' },
+        
         { to: '/testimonials', label: 'Testimonials' },
         { to: '/contact', label: 'Contact' },
       ].map(({ to, label }) => (
