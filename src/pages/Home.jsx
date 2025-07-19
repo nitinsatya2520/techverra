@@ -6,9 +6,19 @@ import { Helmet } from 'react-helmet';
 const Home = () => (
   <>
     <Helmet>
-      <title>Home | Techverra Solutions</title>
-    </Helmet>
-
+  <title>Home | Techverra Solutions</title>
+  <meta name="description" content="Techverra Solutions provides expert software, marketing, and consulting services to boost your business growth." />
+  <meta name="keywords" content="Techverra, software development, digital marketing, SEO, IT consulting" />
+  <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+  <meta property="og:title" content="Home | Techverra Solutions" />
+  <meta property="og:description" content="Empowering your business with modern digital solutions." />
+  <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://techverrasolutions.in/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
+  <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
+  <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+</Helmet>
     <section className="min-h-screen text-gray-900 dark:text-gray-100 relative">
 
       <header className="text-center py-16">
