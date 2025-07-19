@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 const Home = () => (
   <>
     <Helmet>
-  <title>Home | Techverra Solutions</title>
+  <title>Techverra Solutions | Software & Digital Marketing Company</title>
   <meta name="description" content="Techverra Solutions provides expert software, marketing, and consulting services to boost your business growth." />
   <meta name="keywords" content="Techverra, software development, digital marketing, SEO, IT consulting" />
   <meta name="author" content="Techverra Solutions Pvt. Ltd." />
