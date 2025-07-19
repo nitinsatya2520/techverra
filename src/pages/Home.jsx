@@ -12,12 +12,12 @@ const Home = () => (
   <meta name="author" content="Techverra Solutions Pvt. Ltd." />
   <meta property="og:title" content="Home | Techverra Solutions" />
   <meta property="og:description" content="Empowering your business with modern digital solutions." />
-  <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-  <meta property="og:url" content="https://techverrasolutions.in/" />
+  <meta property="og:image" content="https://www.techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Techverra Solutions Pvt. Ltd." />
   <meta name="twitter:description" content="Empowering your business with software and marketing solutions." />
-  <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+  <meta name="twitter:image" content="https://www.techverrasolutions.in/preview.jpg" />
 </Helmet>
     <section className="min-h-screen text-gray-900 dark:text-gray-100 relative">
 
