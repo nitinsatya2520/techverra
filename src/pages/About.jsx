@@ -2,6 +2,22 @@ import React from 'react';
 
 function About() {
   return (
+     <> <Helmet>
+  <title>About Us | Techverra Solutions</title>
+  <meta name="description" content="Discover Techverra Solutions – a dynamic company delivering innovative software, digital marketing, and creative film production services." />
+  <meta name="keywords" content="Techverra Solutions, about, mission, team, innovation, software, marketing, digital agency, film production" />
+  <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Us | Techverra Solutions" />
+  <meta property="og:description" content="Learn about our mission, vision, and values. Meet the team behind Techverra’s creative tech solutions." />
+  <meta property="og:image" content="https://www.techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/about" />
+  <meta property="og:site_name" content="Techverra Solutions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Techverra Solutions" />
+  <meta name="twitter:description" content="Get to know the vision, values, and innovative team behind Techverra Solutions." />
+  <meta name="twitter:image" content="https://www.techverrasolutions.in/preview.jpg" />
+</Helmet>
     <section className="bg-transparent px-4 py-10 max-w-5xl mx-auto rounded-2xl font-sans">
       <h2 className="text-4xl text-purple-700 dark:text-purple-400 font-bold text-center mb-6">About Us</h2>
       <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed text-justify mb-6">
@@ -49,7 +65,7 @@ function About() {
           </li>
         ))}
       </ul>
-    </section>
+    </section></>
   );
 }
 

@@ -40,7 +40,7 @@ const Services = () => (
   <meta name="keywords" content="software services, digital marketing, SEO, app development, IT consulting" />
   <meta property="og:title" content="Our Services | Techverra Solutions" />
   <meta property="og:description" content="Explore software, marketing, and consulting services tailored to your business." />
-  <meta property="og:url" content="https://techverrasolutions.in/services" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/services" />
 </Helmet>
 
   <section className="services-section">
@@ -109,7 +109,7 @@ const Testimonials = () => (
   <meta name="keywords" content="client feedback, testimonials, reviews, Techverra Solutions" />
   <meta property="og:title" content="Testimonials | Techverra Solutions" />
   <meta property="og:description" content="Hear what our customers say about working with Techverra." />
-  <meta property="og:url" content="https://techverrasolutions.in/testimonials" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/testimonials" />
 </Helmet>
 
   <section className="page-section testimonials">
@@ -135,7 +135,7 @@ const Careers = () => (
   <meta name="keywords" content="Techverra careers, jobs, tech jobs, hiring" />
   <meta property="og:title" content="Careers | Techverra Solutions" />
   <meta property="og:description" content="Explore open positions and grow with Techverra." />
-  <meta property="og:url" content="https://techverrasolutions.in/careers" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/careers" />
 </Helmet>
 
   <section className="page-section">

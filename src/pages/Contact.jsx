@@ -40,6 +40,15 @@ const Contact = () => {
   };
 
   return (
+    <>
+      <Helmet>
+  <title>Contact Us | Techverra Solutions</title>
+  <meta name="description" content="Get in touch with Techverra Solutions for business inquiries, partnerships, or support." />
+  <meta name="keywords" content="contact Techverra, business inquiry, support, connect" />
+  <meta property="og:title" content="Contact Us | Techverra Solutions" />
+  <meta property="og:description" content="Reach out to our team for software, marketing, or business consultation services." />
+  <meta property="og:url" content="https://www.techverrasolutions.in/contact" />
+</Helmet>
     <section className="px-4 py-10 max-w-4xl mx-auto text-gray-900">
   <h2 className="text-3xl font-bold mb-6 text-purple-700">Contact Us</h2>
 
@@ -207,6 +216,7 @@ const Contact = () => {
     </form>
   )}
 </section>
+</>
 
   );
 };

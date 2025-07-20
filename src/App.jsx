@@ -31,6 +31,14 @@ import {
 
 
 const Services = () => (
+  <><Helmet>
+    <title>Services | Techverra Solutions</title>
+    <meta name="description" content="Explore Techverra's range of services including custom software, marketing campaigns, SEO, and IT consulting." />
+    <meta name="keywords" content="software services, digital marketing, SEO, app development, IT consulting" />
+    <meta property="og:title" content="Our Services | Techverra Solutions" />
+    <meta property="og:description" content="Explore software, marketing, and consulting services tailored to your business." />
+    <meta property="og:url" content="https://www.techverrasolutions.in/services" />
+  </Helmet>
   <section className="mt-28 px-4 md:px-8 text-center">
     <h2 className="text-3xl font-bold text-purple-700 dark:text-purple-300 mb-10">Our Services</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -89,13 +97,21 @@ const Services = () => (
           <div className="text-blue-500 dark:text-blue-400 text-3xl mb-3 mx-auto">{icon}</div>
           <h3 className="text-xl font-semibold mb-2 text-purple-700 dark:text-purple-300">{title}</h3>
           <p className="text-sm">{description}</p>
-        </div>
+        </div></>
       ))}
 
     </div>
   </section>
 );
 const Testimonials = () => (
+  <><Helmet>
+    <title>Client Testimonials | Techverra Solutions</title>
+    <meta name="description" content="Read reviews from our satisfied clients who trusted us with their digital journey." />
+    <meta name="keywords" content="client feedback, testimonials, reviews, Techverra Solutions" />
+    <meta property="og:title" content="Testimonials | Techverra Solutions" />
+    <meta property="og:description" content="Hear what our customers say about working with Techverra." />
+    <meta property="og:url" content="https://www.techverrasolutions.in/testimonials" />
+  </Helmet>
   <section className="mt-28 px-4 md:px-8 text-center">
     <h2 className="text-3xl font-bold text-purple-700 dark:text-purple-300 mb-10">Client Testimonials</h2>
 
@@ -119,7 +135,7 @@ const Testimonials = () => (
         </div>
       ))}
     </div>
-  </section>
+  </section></>
 );
 
 
@@ -127,12 +143,20 @@ const Testimonials = () => (
 
 
 const Careers = () => (
+  <><Helmet>
+    <title>Careers | Techverra Solutions</title>
+    <meta name="description" content="Join Techverra Solutions and be part of a dynamic team shaping digital futures." />
+    <meta name="keywords" content="Techverra careers, jobs, tech jobs, hiring" />
+    <meta property="og:title" content="Careers | Techverra Solutions" />
+    <meta property="og:description" content="Explore open positions and grow with Techverra." />
+    <meta property="og:url" content="https://www.techverrasolutions.in/careers" />
+  </Helmet>
   <section className="mt-28 px-4 md:px-8 text-center">
     <h2 className="text-3xl font-bold text-purple-600 dark:text-purple-300 mb-4">Careers</h2>
     <p className="text-gray-800 dark:text-gray-200 text-lg">
       We're hiring! Join our team of passionate innovators. Check back soon for job listings.
     </p>
-  </section>
+  </section></>
 );
 
 

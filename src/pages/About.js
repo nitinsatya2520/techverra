@@ -12,13 +12,13 @@ function About() {
   <meta property="og:type" content="website" />
   <meta property="og:title" content="About Us | Techverra Solutions" />
   <meta property="og:description" content="Learn about our mission, vision, and values. Meet the team behind Techverra’s creative tech solutions." />
-  <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-  <meta property="og:url" content="https://techverrasolutions.in/about" />
+  <meta property="og:image" content="https://www.techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/about" />
   <meta property="og:site_name" content="Techverra Solutions" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Techverra Solutions" />
   <meta name="twitter:description" content="Get to know the vision, values, and innovative team behind Techverra Solutions." />
-  <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+  <meta name="twitter:image" content="https://www.techverrasolutions.in/preview.jpg" />
 </Helmet>
 
 

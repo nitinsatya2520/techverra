@@ -69,13 +69,13 @@ const Portfolio = () => (
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Our Work | Techverra Solutions" />
       <meta property="og:description" content="See the innovative web, AI, and mobile projects built by Techverra Solutions." />
-      <meta property="og:image" content="https://techverrasolutions.in/preview.jpg" />
-      <meta property="og:url" content="https://techverrasolutions.in/portfolio" />
+      <meta property="og:image" content="https://www.techverrasolutions.in/preview.jpg" />
+      <meta property="og:url" content="https://www.techverrasolutions.in/portfolio" />
       <meta property="og:site_name" content="Techverra Solutions" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Techverra Portfolio" />
       <meta name="twitter:description" content="Browse the creative and impactful projects delivered by Techverra Solutions." />
-      <meta name="twitter:image" content="https://techverrasolutions.in/preview.jpg" />
+      <meta name="twitter:image" content="https://www.techverrasolutions.in/preview.jpg" />
     </Helmet>
 
     <section className="mt-28 px-4 md:px-8 text-center">

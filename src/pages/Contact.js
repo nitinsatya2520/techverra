@@ -50,7 +50,7 @@ const Contact = () => {
   <meta name="keywords" content="contact Techverra, business inquiry, support, connect" />
   <meta property="og:title" content="Contact Us | Techverra Solutions" />
   <meta property="og:description" content="Reach out to our team for software, marketing, or business consultation services." />
-  <meta property="og:url" content="https://techverrasolutions.in/contact" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/contact" />
 </Helmet>
 
     <section className="page-section contact">

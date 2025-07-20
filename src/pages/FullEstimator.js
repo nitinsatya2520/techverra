@@ -170,7 +170,7 @@ export default function FullEstimator() {
   <meta name="keywords" content="project estimator, software cost, app development cost, techverra estimator" />
   <meta property="og:title" content="Estimator | Techverra Solutions" />
   <meta property="og:description" content="Instantly estimate your project cost with our interactive tool." />
-  <meta property="og:url" content="https://techverrasolutions.in/full-estimator" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/full-estimator" />
 </Helmet>
 
   <section className="estimator-section">
