@@ -12,7 +12,7 @@ const Home = () => (
 <Helmet>
   <title>Techverra Solutions | Software & Digital Marketing Company</title>
   <meta name="description" content="Techverra Solutions provides expert software, marketing, and consulting services to boost your business growth." />
-  <meta name="keywords" content="Techverra, software development, digital marketing, SEO, IT consulting" />
+  <meta name="keywords" content="Techverra Solutions, Techverra, Techvera, Techveera, Techvera Solutions Pvt. Ltd., Techveera Solutions Private Limited, software development, web development, digital marketing, SEO, IT services, app development, branding, consulting" />
   <meta name="author" content="Techverra Solutions Pvt. Ltd." />
   <meta property="og:title" content="Home | Techverra Solutions" />
   <meta property="og:description" content="Empowering your business with modern digital solutions." />
