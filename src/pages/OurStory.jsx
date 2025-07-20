@@ -9,7 +9,7 @@ import handshakeAnim from '../assets/lottie/Handshake Loop.json';
 import codeAnim from '../assets/lottie/Coding.json';
 import rocketAnim from '../assets/lottie/Rocket loader.json';
 import beliefAnim from '../assets/lottie/Trust.json';
-
+import { Helmet } from "react-helmet";
 const timelineItems = [
   {
     year: 'The Spark',
@@ -69,7 +69,20 @@ const OurStory = () => {
   });
 
   return (
-    <>
+    <><Helmet>
+  <title>Our Story | Techverra Solutions</title>
+  <meta name="description" content="Explore the journey of Techverra Solutions — from vision to innovation. See how our founders built a company that transforms ideas into reality." />
+  <meta name="keywords" content="Techverra, Techverra Solutions, Techverra Pvt. Ltd., Techverra Private Limited, Our Story, Company History, Founders, Innovation, Technology Journey" />
+  <meta name="author" content="Techverra Solutions Pvt. Ltd." />
+  <link rel="canonical" href="https://www.techverrasolutions.in/ourstory" />
+  
+  {/* Social Sharing Tags */}
+  <meta property="og:title" content="Our Story | Techverra Solutions" />
+  <meta property="og:description" content="From vision to reality — the story behind Techverra's growth and innovation." />
+  <meta property="og:image" content="https://www.techverrasolutions.in/preview.jpg" />
+  <meta property="og:url" content="https://www.techverrasolutions.in/ourstory" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-light-accent dark:bg-dark-accent z-50 origin-left"
         style={{ scaleX }}
