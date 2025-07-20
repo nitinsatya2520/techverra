@@ -17,7 +17,7 @@ import Portfolio from "./pages/Portfolio";
 import ParticleBackground from './components/ParticleBackground';
 import { Helmet } from 'react-helmet';
 import Popup from './components/PromoPopup.jsx';
-
+import CompanyPolicy from './pages/CompanyPolicy';
 import {
   FaBullhorn,
   FaCode,
@@ -182,7 +182,7 @@ const App = () => {
             <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
             <Link to="/careers" onClick={() => setMenuOpen(false)}>Careers</Link>
             <Link to="/internships" onClick={() => setMenuOpen(false)}>Internships</Link>
-            <Link to="/full-estimator" onClick={() => setMenuOpen(false)}>Estimator</Link>
+            <Link to="/company-policy" onClick={() => setMenuOpen(false)}>Company Policy</Link>
             <Link to="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
@@ -195,6 +195,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/full-estimator" element={<FullEstimator />} />
+          <Route path="/company-policy" element={<CompanyPolicy />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/internships" element={<Internships />} />

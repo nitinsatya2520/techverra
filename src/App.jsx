@@ -16,6 +16,8 @@ import { Helmet } from 'react-helmet';
 import Popup from './components/PromoPopup.jsx';
 import ParticleBackground from './components/ParticleBackground.jsx';
 import Portfolio from "./pages/Portfolio.jsx";
+import CompanyPolicy from './pages/CompanyPolicy.jsx';
+import OurStory from './pages/OurStory.jsx';
 import {
   FaBullhorn,
   FaCode,
@@ -97,11 +99,11 @@ const Services = () => (
           <div className="text-blue-500 dark:text-blue-400 text-3xl mb-3 mx-auto">{icon}</div>
           <h3 className="text-xl font-semibold mb-2 text-purple-700 dark:text-purple-300">{title}</h3>
           <p className="text-sm">{description}</p>
-        </div></>
+        </div>
       ))}
 
     </div>
-  </section>
+  </section></>
 );
 const Testimonials = () => (
   <><Helmet>
@@ -209,13 +211,17 @@ const App = () => {
     >
       {[
         { to: '/', label: 'Home' },
-        { to: '/about', label: 'About' },
+        { to: '/ourstory', label: 'Our Story' },
+        
         { to: '/services', label: 'Services' },
         { to: '/portfolio', label: 'Portfolio' },
         { to: '/careers', label: 'Careers' },
-        { to: '/internships', label: 'Internships' },
-        
         { to: '/testimonials', label: 'Testimonials' },
+        { to: '/internships', label: 'Internships' },
+        { to: '/company-policy', label: 'Company Policy' },
+        { to: '/about', label: 'About' },
+        
+        
         { to: '/contact', label: 'Contact' },
       ].map(({ to, label }) => (
         <Link
@@ -242,8 +248,10 @@ const App = () => {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/internships" element={<Internships />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/company-policy" element={<CompanyPolicy />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/jan" element={<Jan />} />
+            <Route path="/ourstory" element={<OurStory />} />
           </Routes>
         </main>
 
