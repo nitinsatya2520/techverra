@@ -70,7 +70,7 @@ const CompanyPolicy = () => {
           </ul>
         </section>
 
-        {/* 4. Director & Shareholder Policy */}
+        {/* 4. Director & Shareholder Policy 
         <section className="mb-10 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border p-6 rounded-xl shadow-card">
           <h2 className="text-2xl font-semibold text-blue-600 dark:text-dark-accent mb-2">
             4. Director & Shareholder Policy
@@ -83,12 +83,12 @@ const CompanyPolicy = () => {
             <li><strong>Exit:</strong> Shares offered to other family first.</li>
             <li><strong>Disputes:</strong> Resolved via arbitration in Vijayawada.</li>
           </ul>
-        </section>
+        </section>*/}
 
         {/* 5–15. Additional Company Policies */}
         <section className="mb-10 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border p-6 rounded-xl shadow-card">
           <h2 className="text-2xl font-semibold text-blue-600 dark:text-dark-accent mb-2">
-            5–15. Additional Company Policies
+            4–15. Additional Company Policies
           </h2>
           <ul className="list-disc ml-6 space-y-2">
             <li><strong>Code of Conduct:</strong> Professionalism, respect, zero harassment.</li>

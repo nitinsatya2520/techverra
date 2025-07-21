@@ -18,6 +18,7 @@ import ParticleBackground from './components/ParticleBackground.jsx';
 import Portfolio from "./pages/Portfolio.jsx";
 import CompanyPolicy from './pages/CompanyPolicy.jsx';
 import OurStory from './pages/OurStory.jsx';
+import Navbar from './components/Navbar.jsx';
 import {
   FaBullhorn,
   FaCode,
@@ -188,54 +189,11 @@ const App = () => {
       <WeatherModule apiKey="03f7fb2a6ffa9af4e20414dc73edb7a3" city="Delhi" />
       <TimeModule />
       <Jan />
+      <Navbar/>
 
       <div className="min-h-screen flex flex-col">
 
-       <header className="fixed w-full z-50 bg-white/80 dark:bg-gray-900/20 backdrop-blur-md shadow-md">
-  <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
-    <Link to="/">
-      <img src="/logonn.png" alt="Techverra Logo" className="h-12 w-auto" />
-    </Link>
-
-    <button
-      className="md:hidden text-xl text-gray-900 dark:text-white"
-      onClick={() => setMenuOpen(!menuOpen)}
-    >
-      ☰
-    </button>
-
-    <nav
-      className={`${
-        menuOpen ? 'block' : 'hidden'
-      } md:flex space-x-4 md:space-x-6 font-medium`}
-    >
-      {[
-        { to: '/', label: 'Home' },
-        { to: '/ourstory', label: 'Our Story' },
-        
-        { to: '/services', label: 'Services' },
-        { to: '/portfolio', label: 'Portfolio' },
-        { to: '/careers', label: 'Careers' },
-        { to: '/testimonials', label: 'Testimonials' },
-        { to: '/internships', label: 'Internships' },
-        { to: '/company-policy', label: 'Company Policy' },
-        { to: '/about', label: 'About' },
-        
-        
-        { to: '/contact', label: 'Contact' },
-      ].map(({ to, label }) => (
-        <Link
-          key={to}
-          to={to}
-          className="block py-2 md:py-0 text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
-          onClick={() => setMenuOpen(false)}
-        >
-          {label}
-        </Link>
-      ))}
-    </nav>
-  </div>
-</header>
+       
 
         <main className="flex-grow pt-20">
           <Routes>
