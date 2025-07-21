@@ -1,9 +1,11 @@
 import React from 'react';
 
 const teamSections = [
+  
   {
-    title: 'Founders & Directors',
+    title: 'Our Executive Team',
     members: [
+      
       {
         name: 'Kadavakollu Nitin Saya (MD)',
         role: 'Founder & Managing Director',
@@ -16,11 +18,6 @@ const teamSections = [
         image: '/assets/Jai.jpg',
         bio: 'Tech strategist with deep expertise in software architecture and team leadership. Focused on delivering high-quality, future-ready tech solutions.',
       },
-    ],
-  },
-  {
-    title: 'Our Team',
-    members: [
       {
         name: 'Ponnapureddy Naga Sivareddy (CBO)',
         role: 'Chief Of Business Operations – CBO',
