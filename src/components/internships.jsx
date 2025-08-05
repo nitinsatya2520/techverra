@@ -52,7 +52,7 @@ const Internships = () => {
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-14">
         <h1 className="text-4xl sm:text-5xl font-bold text-blue-700 dark:text-blue-400 mb-4">
-          Internship Opportunities at Techverra 🚀
+          Internship cum Training Opportunities at Techverra 🚀
         </h1>
         <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
           Learn real-world skills with hands-on experience and earn a certificate of completion.
