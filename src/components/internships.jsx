@@ -16,7 +16,7 @@ const internshipsRoles = [
     title: "AI & ML",
     description: "Learn Artificial Intelligence & Machine Learning basics in a hands-on internship.",
     details: `Understand core AI/ML concepts, supervised vs unsupervised learning, and build basic models using Python. Includes projects with datasets like Iris, MNIST, and Titanic.`,
-    cost: "₹799 (Currently Free)",
+    cost: "₹799 ",
     formLink: "https://forms.gle/your-ai-ml-form",
     detailsLink: "https://internship.techverrasolutions.in"
   },
@@ -25,7 +25,7 @@ const internshipsRoles = [
     title: "Blockchain",
     description: "Get started with blockchain development and decentralization principles.",
     details: `Dive into blockchain fundamentals, Ethereum, smart contracts with Solidity, and use tools like Remix and MetaMask. Perfect for understanding Web3 basics.`,
-    cost: "₹799 (Currently Free)",
+    cost: "₹799 ",
     formLink: "https://forms.gle/your-blockchain-form",
     detailsLink: "https://internship.techverrasolutions.in"
   },
@@ -34,7 +34,7 @@ const internshipsRoles = [
     title: "Web Development",
     description: "A practical internship on HTML, CSS, JavaScript, and web application building.",
     details: `Build responsive websites using HTML5, CSS3, and JavaScript. Learn GitHub deployment, basic React, and make a final personal portfolio project.`,
-    cost: "₹499 (Currently Free)",
+    cost: "₹499 ",
     formLink: "https://forms.gle/your-webdev-form",
     detailsLink: "https://internship.techverrasolutions.in"
   },
