@@ -5,7 +5,7 @@ const internshipsRoles = [
    {
     id: 1,
     title: "Python Programming",
-    description: "A 2-week basic internship focused on Python fundamentals.",
+    description: "A 4-week basic internship focused on Python fundamentals.",
     details: `This internship covers Python basics, data structures, OOP, file handling, and hands-on mini projects. Ideal for beginners who want to understand real-world scripting.`,
     cost: "₹499 (Currently Free)",
     formLink: "https://forms.gle/Y5ZbKqXHkCjpWbYEA",
