@@ -27,7 +27,7 @@ const teamSections = [
       {
         name: 'Kukkala Sarada (CLO)',
         role: 'Chief Of Legal Officer – CLO',
-        image: '/assets/Sarada.PNG',
+        image: '/assets/Sarada.png',
         bio: 'Kukkala Sarada serves as the Chief Legal Officer (CLO), bringing extensive expertise in corporate law, compliance, and risk management. With a deep understanding of legal frameworks and strategic decision-making, she ensures the organization operates within all regulatory boundaries while supporting its business objectives. Her leadership fosters ethical practices and robust governance across all departments.',
       },
     ],

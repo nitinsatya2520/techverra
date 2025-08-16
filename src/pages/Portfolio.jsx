@@ -8,7 +8,7 @@ const portfolioItems = [
     description: "A full-stack web app for online food ordering, built with React, Flask, and Google Sheets as a backend database . It features responsive design, user authentication, advanced styling, and full CRUD capabilities.",
   },
   {
-    image: "/assets/bakery.png",
+    image: "/assets/Bakery.png",
     title: "Bakery Web App",
     description: "A full-stack app for managing orders and showcasing bakery products, built with React and Flask, integrated with Google Sheets as a backend database.",
   },
