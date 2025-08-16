@@ -3,6 +3,11 @@ import { Helmet } from 'react-helmet';
 
 const portfolioItems = [
   {
+    image: "https://imaginative-palmier-46a3d2.netlify.app/Spice%20Garden%20Logo.png",
+    title: "Spice Garden",
+    description: "A full-stack web app for online food ordering, built with React, Flask, and Google Sheets as a backend database . It features responsive design, user authentication, advanced styling, and full CRUD capabilities.",
+  },
+  {
     image: "/assets/bakery.png",
     title: "Bakery Web App",
     description: "A full-stack app for managing orders and showcasing bakery products, built with React and Flask, integrated with Google Sheets as a backend database.",

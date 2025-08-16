@@ -15,6 +15,7 @@ const clients = [
   { name: 'Mini Arcade', logo: '/assets/mini-arcade.png' },
   { name: 'Country Advisor', logo: '/assets/country-advisor-logo.png' },
   { name: 'JAN Assistant', logo: '/assets/jan.png' },
+  { name: 'Spice Garden', logo: 'https://imaginative-palmier-46a3d2.netlify.app/Spice%20Garden%20Logo.png' },
 ];
 
 const Clients = () => (
