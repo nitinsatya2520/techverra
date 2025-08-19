@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { FaLightbulb, FaRocket, FaCode, FaHandshake } from 'react-icons/fa';
 import Lottie from 'lottie-react';
-import founder1 from '../assets/Nitin.jpg';
+import founder1 from '../assets/NITIN.png';
 import founder2 from '../assets/Jai.jpg';
 import sparkAnim from '../assets/lottie/Sparkle.json';
 import handshakeAnim from '../assets/lottie/Handshake Loop.json';
