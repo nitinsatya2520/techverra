@@ -9,7 +9,7 @@ const teamSections = [
       {
         name: 'Kadavakollu Nitin Saya (MD)',
         role: 'Founder & Managing Director',
-        image: './assets/Nitin.png',
+        image: './assets/Nitin Satya.png',
         bio: 'Visionary leader driving innovation in software and digital services. Passionate about AI, cybersecurity, and scalable solutions.',
       },
       {
