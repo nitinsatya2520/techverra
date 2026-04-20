@@ -105,7 +105,7 @@ const Home = () => (
         </div>
       </section>
 
-      <Leadership />
+      
       <Clients />
     </section>
   </>
