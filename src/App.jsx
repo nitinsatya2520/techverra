@@ -12,7 +12,7 @@ import Leadership from './components/Leadership.jsx';
 import ThankYou from "./components/ThankYou.jsx";
 import Jan from './components/Jan.jsx';
 import Home from './pages/Home.jsx';
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 import Popup from './components/PromoPopup.jsx';
 import ParticleBackground from './components/ParticleBackground.jsx';
 import Portfolio from "./pages/Portfolio.jsx";

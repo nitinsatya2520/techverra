@@ -9,7 +9,7 @@ import handshakeAnim from '../assets/lottie/Handshake Loop.json';
 import codeAnim from '../assets/lottie/Coding.json';
 import rocketAnim from '../assets/lottie/Rocket loader.json';
 import beliefAnim from '../assets/lottie/Trust.json';
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const timelineItems = [
   {
