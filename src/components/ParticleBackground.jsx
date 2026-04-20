@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Particles from 'react-tsparticles';
-import { loadSlim } from 'tsparticles-slim';
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticleBackground = () => {
   const [offsetY, setOffsetY] = useState(0);
