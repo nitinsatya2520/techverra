@@ -33,7 +33,7 @@ function New() {
       <div className="content">
         <h3>Latest News</h3>
         <p>
-          Techverra Solutions Technical Training Program - 2025 starting from July 4th week.
+          Techverra Solutions Technical Training Program - 2026 starting from May 2nd week.
         </p>
       </div>
     </div>
