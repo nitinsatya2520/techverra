@@ -7,7 +7,6 @@ import New from './components/New';
 import About from './pages/About';
 import TimeModule from './components/TimeModule';
 import WeatherModule from './components/WeatherModule';
-import FullEstimator from './pages/FullEstimator';
 import Contact from "./pages/Contact"; // adjust the path if needed
 import Leadership from './components/Leadership';
 import ThankYou from "./components/ThankYou";

@@ -6,7 +6,6 @@ import New from './components/New.jsx';
 import About from './pages/About.jsx';
 import TimeModule from './components/TimeModule.jsx';
 import WeatherModule from './components/WeatherModule.jsx';
-import FullEstimator from './pages/FullEstimator.jsx';
 import Contact from "./pages/Contact.jsx"; // adjust the path if needed
 import Leadership from './components/Leadership.jsx';
 import ThankYou from "./components/ThankYou.jsx";
