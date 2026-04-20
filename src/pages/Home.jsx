@@ -1,7 +1,7 @@
 import Leadership from '../components/Leadership.jsx';
 import Clients from './Clients';
 import MultiTypingText from '../components/MultiTypingText.jsx';
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 
 const Home = () => (
   <>
